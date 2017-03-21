@@ -18,7 +18,7 @@
 		case "buka_password":
 			?><div id="box_dialog_password" class="box_dialog">
 				<div class="wrap_text">
-					<input type="password" id="password_admin_dialog" class="input_pass_dialog" placeholder="Masukkan Password">
+					<input type="password" id="password_admin_dialog" class="input_pass_dialog" placeholder="Masukkan Username">
 					<input type="button" id="submit_password_dialog" class="btn_submit_dialog" value="submit" onclick="cek_password('<?php echo $tujuan; ?>')">
 				</div>
 			</div> <?php
@@ -27,15 +27,15 @@
 		case "error_pertemuan":
 			?><div id="box_dialog_error_pertemuan" class="box_dialog">
 				<div class="wrap_text">Kelompok pertemuan harus dipilih terlebih dahulu!</div>
-				<btn class="btn_tidak_dialog" style="width:100%;" onclick="close_dialog()">OK kembali!</btn>
+				<btn class="btn_tidak_dialog" style="width:100%;" onclick="close_dialog()">BACK</btn>
 				<div class="clear"></div>
 			</div> <?php
 		break;
 
 		case "salah_password":
 			?><div id="box_dialog_salah_password" class="box_dialog">
-				<div class="wrap_text">Haha password Anda salah!</div>
-				<btn class="btn_tidak_dialog" style="width:100%;" onclick="close_dialog()">OK Fine!</btn>
+				<div class="wrap_text">Username Anda belum terdaftar!</div>
+				<btn class="btn_tidak_dialog" style="width:100%;" onclick="close_dialog()">OK</btn>
 				<div class="clear"></div>
 				<audio controls autoplay style="display:none"><source src="<?php echo base_url("assets/sound/music3.mp3"); ?>"></audio>
 			</div> <?php

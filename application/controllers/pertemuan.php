@@ -7,7 +7,7 @@ class Pertemuan extends CI_Controller {
 		parent:: __construct();
 		$this->load->model("Pertemuan_model");
 		$this->load->helper("url");
-		$this->load->library("input");
+		
 	}
 
 	public function index()

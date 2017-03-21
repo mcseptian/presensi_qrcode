@@ -59,7 +59,7 @@
 		$.ajax({
 			type:"POST",
 			url:"<?php echo site_url("index.php/dialog/cek_password"); ?>",
-			data: "password="+pass,
+			data: "username="+pass,
 			success: function(result){
 				if(result==1){
 			
