@@ -1,5 +1,5 @@
-<?php 
-	include "include/head.php"; 
+<?php
+	include "include/head.php";
 	$date_eng = array("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", "Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
 	$date_ind = array("Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu", "Minggu", "Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember");
 ?>
@@ -30,12 +30,12 @@
 		</form>
 	</div>
 </div>
-<div class="catatan_create_pertemuan"><span class="bold">Buat pertemuan</span> untuk melakukan proses absensi</div>
+<div class="catatan_create_pertemuan"><span class="bold">Buat pertemuan</span> untuk melakukan presensi</div>
 </div>
 
 <div id="footer"><div class="wrap_dalam_footer">
-	<div class="logo"><img width="60" src="<?php echo base_url("assets/images/logo_HT.png"); ?>"></div>
-	<div class="tulisan">EEPIS WEBDEV COMMUNITY</div>
+	<div class="logo"><img width="50" src="<?php echo base_url("assets/images/logo.png"); ?>"></div>
+	<div class="tulisan">PRESENSI QR CODE</div>
 	<div class="clear"></div>
 </div></div>
 
