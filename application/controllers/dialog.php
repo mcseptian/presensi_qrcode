@@ -6,7 +6,6 @@ class Dialog extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->helper("url");
-		$this->load->library("input");
 		$this->load->model("Pertemuan_model");
 		$this->load->model("Admin_model");
 	}
