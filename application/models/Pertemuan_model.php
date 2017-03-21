@@ -1,40 +1,43 @@
 <?php 
 
-class Pertemuan_model extends CI_Model
-{
-    function __construct()
-    {
-        parent::__construct();
-    }
+class Pertemuan_model extends CI_Model {
 
-    function select_all_kelompok()
-    {
-        $this->db->select("*");
-        $this->db->from("tbl_kelompok");
+	function __construct()
+	{
+		parent::__construct();
+	}
 
-        return $this->db->get();
-    }
+	function select_all_kelompok()
+	{
+		$this->db->select("*");
+		$this->db->from("tbl_kelompok");
 
-    function select_kelompok($id)
-    {
-        $this->db->select("*");
-        $this->db->from("tbl_kelompok");
-        $this->db->where("id", $id);
+		return $this->db->get();
+	}
 
-        return $this->db->get();
-    }
+	function select_kelompok($id)
+	{
+		$this->db->select("*");
+		$this->db->from("tbl_kelompok");
+		$this->db->where("id",$id);
 
-    function create_pertemuan($data)
-    {
-        $this->db->insert("tbl_pertemuan", $data);
-    }
+		return $this->db->get();
+	}
 
-    function select_pertemuan_byTime($waktu)
-    {
-        $this->db->select("*");
-        $this->db->from("tbl_pertemuan");
-        $this->db->where("waktu", $waktu);
+	function create_pertemuan($data)
+	{
+		$this->db->insert("tbl_pertemuan", $data);
+	}
 
-        return $this->db->get();
-    }
+	function select_pertemuan_byTime($waktu)
+	{
+		$this->db->select("*");
+		$this->db->from("tbl_pertemuan");
+		$this->db->where("waktu",$waktu);
+
+		return $this->db->get();
+	}
+
 }
+
+?>
