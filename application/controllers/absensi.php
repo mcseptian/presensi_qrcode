@@ -23,7 +23,7 @@ class Absensi extends CI_Controller {
 	{
 		$this->session->sess_destroy();
 		redirect(site_url(""));
-	}		
+	}
 
 	public function proses_absen()
 	{
@@ -33,7 +33,7 @@ class Absensi extends CI_Controller {
 		if(count($anggota) > 0){
 
 			$data["id_pertemuan"] = $this->session->userdata("id_pertemuan");
-			
+
 			$cek_absen = $this->Absensi_model->cek_absen($data["id_anggota"], $data["id_pertemuan"])->row();
 			if(count($cek_absen) > 0){
 				$data["status"] = "sudah_tercatat";
@@ -51,6 +51,5 @@ class Absensi extends CI_Controller {
 			$data["status"] = "fail";
 			$this->load->view("hasil_absensi",$data);
 		}
-	}	
+	}
 }
-
