@@ -1,6 +1,6 @@
 
 
-<script src="<?php echo base_url('assets/libraries/jquery.min.js'); ?>"></script>
+<script src="<?php echo base_url('assets/libraries/jQuery/jquery-3.2.0.min.min.js'); ?>"></script>
 <script src="<?php echo base_url('assets/custom/js/main.js'); ?>"></script>
 
 
