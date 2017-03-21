@@ -9,7 +9,7 @@
 					<span id="nama_kelompok_dialog" class="bold"><?php foreach ($kelompok as $k) {echo $k->nama;} ?></span> 
 					pada <span class="bold" id="tanggal_dialog"><?php echo str_replace($date_eng, $date_ind, date('d M Y',$waktu)); ?></span> ?
 				</div>
-				<button class="btn_tidak_dialog" onclick="close_dialog()">Tidak</button>
+				<div class="btn_tidak_dialog" onclick="close_dialog()">Tidak</div>
 				<div class="btn_ya_dialog" onclick="open_password('untuk_pertemuan')">Ya</div>
 				<div class="clear"></div>
 			</div> <?php
