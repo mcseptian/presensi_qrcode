@@ -9,7 +9,7 @@
 
 <div class="garis_biru"></div>
 <div class="title_portal_absensi">
-	<span class="title1">Portal Absensi Komunitas WEBDEV 2</span>
+	<span class="title1">Portal Presensi QR Code</span>
 	<span class="title2">
 		Pertemuan <span class="bold"> kelompok <span id="pertemuan_kelompok"><?php echo $this->session->userdata("kelompok"); ?></span></span>, 
 		pada <span class="bold" id="tanggal"><?php echo str_replace($date_eng, $date_ind, date('D, d M Y', $this->session->userdata("waktu"))); ?></span>
@@ -40,8 +40,8 @@
 <div id="btn_tutup_absen" onclick="tutup_absensi()">Tutup Absen</div>
 
 <div id="footer"><div class="wrap_dalam_footer">
-	<div class="logo"><img width="60" src="<?php echo base_url("assets/images/logo_HT.png"); ?>"></div>
-	<div class="tulisan">EEPIS WEBDEV COMMUNITY</div>
+	<div class="logo"><img width="60" src="<?php echo base_url("assets/images/logo.png"); ?>"></div>
+	<div class="tulisan">PRESENSI QR CODE</div>
 	<div class="clear"></div>
 </div></div>
 

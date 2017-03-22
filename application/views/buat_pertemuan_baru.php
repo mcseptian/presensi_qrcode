@@ -17,7 +17,7 @@
 		<form id="form_pertemuan">
 			<div class="option_kelompok_pertemuan">
 				<select id="id_kelompok_pertemuan" name="kelompok_pertemuan">
-					<option value="null">Pilihan Kelompok Pertemuan</option>
+					<option value="null">Kelompok Pertemuan</option>
 					<?php
 						foreach ($daftar_kelompok as $kelompok) {
 							echo "<option value='$kelompok->id'>$kelompok->nama</option>";
@@ -34,8 +34,8 @@
 </div>
 
 <div id="footer"><div class="wrap_dalam_footer">
-	<div class="logo"><img width="60" src="<?php echo base_url("assets/images/logo_HT.png"); ?>"></div>
-	<div class="tulisan">EEPIS WEBDEV COMMUNITY</div>
+	<div class="logo"><img width="60" src="<?php echo base_url("assets/images/logo.png"); ?>"></div>
+	<div class="tulisan">PRESENSI QR CODE</div>
 	<div class="clear"></div>
 </div></div>
 
