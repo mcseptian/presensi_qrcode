@@ -34,7 +34,7 @@
 </div>
 
 <div id="footer"><div class="wrap_dalam_footer">
-	<div class="logo"><img width="60" src="<?php echo base_url("assets/images/logo.png"); ?>"></div>
+	<div class="logo"><img width="40" src="<?php echo base_url("assets/images/logo.png"); ?>"></div>
 	<div class="tulisan">PRESENSI QR CODE</div>
 	<div class="clear"></div>
 </div></div>

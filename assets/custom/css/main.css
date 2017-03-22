@@ -24,7 +24,7 @@ body{
 	z-index: 1;
 }
 .wrap_waktu{
-	background-color:#fff;
+	background-color:#e5e5e5;
 	border-radius: 0 0 10px 10px;
 	padding:15px;
 	width: 250px;
@@ -76,7 +76,9 @@ body{
 	margin-bottom: 5px;
 }
 .option_kelompok_pertemuan select option{
-	
+	background-color: #888;
+	color: #000;
+	border-radius: 5px;
 }
 .catatan_create_pertemuan{
 	text-align: center;
@@ -87,7 +89,7 @@ body{
 /* -----Style untuk protal absensi----- */
 #container_absen{
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	text-align: center;
 	width: 100%;
 }
@@ -105,7 +107,7 @@ body{
 	transition:all .20s ease-in-out;
 }
 #btn_untuk_absen:hover{
-	background-color: #0290BF;
+	background-color: #E74C3B;
 }
 .catatan_untuk_absen{
 	text-align: center;
@@ -113,7 +115,7 @@ body{
 }
 .title_portal_absensi{
 	text-align: center;	
-	margin-top: 8%;
+	margin-top: 5%;
 }
 .title_portal_absensi .title1{
 	display: block;
@@ -159,7 +161,6 @@ body{
 #content_proses_absen{
 	display: none;
 }
-
 #content_fail_absen{
 	background-color: #F7A8A8;
 	padding:30px 0;
@@ -187,7 +188,7 @@ body{
 
 #container_hasil_absen{
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	text-align: center;
 	width: 100%;
 }
@@ -230,7 +231,6 @@ body{
 	width:70%;
 	display: none;
 }*/
-
 
 /* -----Style untuk footer----- */
 #footer{

@@ -18,13 +18,13 @@
 
 <div id="container_absen">
 	<div id="content_mulai_absen">
-
 		<div id="btn_untuk_absen" onclick="mulai_absen()">Klik untuk Absen</div>
-		<div class="catatan_untuk_absen">Siapkan <span class="bold">gambar barcode</span> identitas Anda</div>
+				<div class="catatan_untuk_absen">Siapkan <span class="bold">gambar barcode</span> identitas Anda</div>
 	</div>
 	<div id="content_proses_absen">
 		<div class="qrcode_wrap">
-			<input type="button" onclick="backToMulaiAbsen()" value="kembali">
+			<div id="btn_untuk_absen" onclick="backToMulaiAbsen()"> Kembali</div>
+			<br/>
 			<div id="mainbody">
 			    <div id="outdiv"></div>
 			    <input type="hidden" id="result">
@@ -40,7 +40,7 @@
 <div id="btn_tutup_absen" onclick="tutup_absensi()">Tutup Absen</div>
 
 <div id="footer"><div class="wrap_dalam_footer">
-	<div class="logo"><img width="60" src="<?php echo base_url("assets/images/logo.png"); ?>"></div>
+	<div class="logo"><img width="40" src="<?php echo base_url("assets/images/logo.png"); ?>"></div>
 	<div class="tulisan">PRESENSI QR CODE</div>
 	<div class="clear"></div>
 </div></div>
