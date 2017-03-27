@@ -6,7 +6,7 @@
 		case "kepastian_pertemuan":
 			?><div id="box_dialog_kepastian_pertemuan" class="box_dialog">
 				<div class="wrap_text">Apakah Anda yakin membuat pertemuan kelompok 
-					<span id="nama_kelompok_dialog" class="bold"><?php foreach ($kelompok as $k) {echo $k->nama;} ?></span> 
+					<span id="nama_kelompok_dialog" class="bold"><?php foreach ($kelompok as $k) {echo $k->description;} ?></span>
 					pada <span class="bold" id="tanggal_dialog"><?php echo str_replace($date_eng, $date_ind, date('d M Y',$waktu)); ?></span> ?
 				</div>
 				<div class="btn_tidak_dialog" onclick="close_dialog()">Tidak</div>

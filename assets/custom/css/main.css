@@ -33,8 +33,14 @@ body{
 	text-align: center;
 	z-index: 2;
 }
-
-
+#container_login {
+    width:350px;
+    position: absolute;
+    top:40%;
+    left: 50%;
+    margin-left: -175px;
+    margin-top: -100px;
+}
 /* -----Style untuk protal membuat pertemuan----- */
 #container_create_pertemuan {
 	width:350px;
@@ -126,11 +132,16 @@ body{
 	display: block;
 	font-size:15px;
 }
+.title_portal_absensi .title3{
+    display: block;
+    font-size:20px;
+    margin-top: -3%;
+}
 #btn_tutup_absen{
 	z-index: 2;
 	position: absolute;
 	bottom: 20px;
-	right: -110px;
+	right: -69px;
 	background-color: #E74C3B;
 	color: #fff;
 	font-weight: bold;

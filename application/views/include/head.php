@@ -20,7 +20,7 @@
     <meta name="theme-color" content="#fff">
 	<link rel="stylesheet" href="<?php echo base_url('assets/custom/css/main.css'); ?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/custom/css/dialog.css'); ?>">
-	<link rel="stylesheet" href="<?php echo base_url('assets/custom/css/admin.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/custom/css/admin.css'); ?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/libraries/bootstrap/css/bootstrap.min.css'); ?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/libraries/bootstrap/css/bootstrap-theme.min.css'); ?>">
 	<script src="<?php echo base_url('assets/libraries/qrcode/llqrcode.js'); ?>"></script>

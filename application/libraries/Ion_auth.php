@@ -426,7 +426,8 @@ class Ion_auth
 			if (version_compare(PHP_VERSION, '7.0.0') >= 0) {
 				session_start();
 			}
-			$this->session->sess_regenerate(TRUE);
+			// $this->session->sess_regenerate();
+			$this->session->sess_destroy();
 		}
 
 		$this->set_message('logout_successful');
