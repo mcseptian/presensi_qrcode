@@ -19,13 +19,13 @@ class Absensi_model extends CI_Model
 
     function absen($data)
     {
-        $this->db->insert("tbl_absensi", $data);
+        $this->db->insert("tbl_presentsi", $data);
     }
 
     function cek_absen($id_anggota, $id_pertemuan)
     {
         $this->db->select("*");
-        $this->db->from("tbl_absensi");
+        $this->db->from("tbl_presentsi");
         $this->db->where("id_anggota", $id_anggota);
         $this->db->where("id_pertemuan", $id_pertemuan);
 
