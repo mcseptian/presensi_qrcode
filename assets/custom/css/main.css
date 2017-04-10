@@ -41,6 +41,7 @@ body{
     margin-left: -175px;
     margin-top: -100px;
 }
+
 /* -----Style untuk protal membuat pertemuan----- */
 #container_create_pertemuan {
 	width:350px;
@@ -90,7 +91,6 @@ body{
 	text-align: center;
 	margin-top: 10px;
 }
-
 
 /* -----Style untuk protal absensi----- */
 #container_absen{
@@ -181,7 +181,6 @@ body{
 	font-size: 18px;
 	color: #E00000;
 }
-
 #content_sudah_tercatat_absen{
 	background-color: #2FE0AE;
 	padding:30px 0;
@@ -196,7 +195,6 @@ body{
 	font-weight: bold;
 	color: #00855F;
 }
-
 #container_hasil_absen{
 	position: absolute;
 	top: 40%;
@@ -264,4 +262,4 @@ body{
 	margin:15px 0 0 12px;
 	font-size: 14px;
 	font-weight: bold;
-	}
+}
