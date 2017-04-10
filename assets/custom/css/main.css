@@ -81,11 +81,11 @@ body{
 	color:#999;
 	margin-bottom: 5px;
 }
-.option_kelompok_pertemuan select option{
+/*.option_kelompok_pertemuan select option{
 	background-color: #888;
 	color: #000;
 	border-radius: 5px;
-}
+}*/
 .catatan_create_pertemuan{
 	text-align: center;
 	margin-top: 10px;
