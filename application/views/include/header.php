@@ -9,11 +9,11 @@
     <title>Selamat Datang</title>
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Limuny Ad.S">
+    <meta name="application-name" content="Presensi QR Code">
     <link rel="icon" sizes="192x192" href="<?php echo base_url('assets/images/logo.png'); ?>">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Limuny Ad.S">
+    <meta name="apple-mobile-web-app-title" content="Presensi QR Code">
     <link rel="apple-touch-icon" href="<?php echo base_url('assets/images/logo.png'); ?>">
     <meta name="msapplication-TileImage" content="<?php echo base_url('assets/images/logo.png'); ?>">
     <meta name="msapplication-TileColor" content="#fff">
