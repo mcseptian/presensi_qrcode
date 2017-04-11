@@ -1,7 +1,3 @@
-
-
-
-
 //closed dialog
 function close_dialog(){
 	$("#tempat_box_dialog").fadeOut(0200);

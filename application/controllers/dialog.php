@@ -35,7 +35,7 @@ class Dialog extends CI_Controller {
 
 	public function cek_password()
 	{
-		$pass = $this->input->post("password");
+		$pass = $this->input->post("username");
 
 		$admin = $this->Admin_model->cek_password($pass)->row();
 		$jumlah_admin = count($admin);

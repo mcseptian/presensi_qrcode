@@ -32,14 +32,13 @@ class Auth extends CI_Controller {
 		{
 			// set the flash data error message if there is one
 			$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
-
 			//list the users
 			$this->data['users'] = $this->ion_auth->users()->result();
 			foreach ($this->data['users'] as $k => $user)
 			{
 				$this->data['users'][$k]->groups = $this->ion_auth->get_users_groups($user->id)->result();
 			}
-
+            // redirect them to the index page
 			$this->_render_page('auth/index', $this->data);
 		}
 	}
@@ -64,7 +63,7 @@ class Auth extends CI_Controller {
 				//if the login is successful
 				//redirect them back to the home page
 				$this->session->set_flashdata('message', $this->ion_auth->messages());
-				redirect('/', 'refresh');
+				redirect('auth/index', 'refresh');
 			}
 			else
 			{
@@ -437,20 +436,28 @@ class Auth extends CI_Controller {
         }
         $this->form_validation->set_rules('phone', $this->lang->line('create_user_validation_phone_label'), 'trim');
         $this->form_validation->set_rules('company', $this->lang->line('create_user_validation_company_label'), 'trim');
+        $this->form_validation->set_rules('year', $this->lang->line('edit_user_validation_year_label'), 'required');
+        $this->form_validation->set_rules('faculty', $this->lang->line('edit_user_validation_faculty_label'), 'required');
+        $this->form_validation->set_rules('major', $this->lang->line('edit_user_validation_major_label'), 'required');
         $this->form_validation->set_rules('password', $this->lang->line('create_user_validation_password_label'), 'required|min_length[' . $this->config->item('min_password_length', 'ion_auth') . ']|max_length[' . $this->config->item('max_password_length', 'ion_auth') . ']|matches[password_confirm]');
         $this->form_validation->set_rules('password_confirm', $this->lang->line('create_user_validation_password_confirm_label'), 'required');
 
         if ($this->form_validation->run() == true)
         {
             $email    = strtolower($this->input->post('email'));
-            $identity = ($identity_column==='email') ? $email : $this->input->post('identity');
+            //$identity = ($identity_column==='email') ? $email : $this->input->post('identity');
+            $identity = $this->input->post('identity');
             $password = $this->input->post('password');
 
             $additional_data = array(
                 'first_name' => $this->input->post('first_name'),
                 'last_name'  => $this->input->post('last_name'),
+                'identity'   => $this->input->post('identity'),
                 'company'    => $this->input->post('company'),
                 'phone'      => $this->input->post('phone'),
+                'year'       => $this->input->post('year'),
+                'faculty'    => $this->input->post('faculty'),
+                'major'      => $this->input->post('major'),
             );
         }
         if ($this->form_validation->run() == true && $this->ion_auth->register($identity, $password, $email, $additional_data))
@@ -502,6 +509,24 @@ class Auth extends CI_Controller {
                 'type'  => 'text',
                 'value' => $this->form_validation->set_value('phone'),
             );
+            $this->data['year'] = array(
+                'name'  => 'year',
+                'id'    => 'year',
+                'type'  => 'text',
+                'value' => $this->form_validation->set_value('year'),
+            );
+            $this->data['faculty'] = array(
+                'name'  => 'faculty',
+                'id'    => 'faculty',
+                'type'  => 'text',
+                'value' => $this->form_validation->set_value('faculty'),
+            );
+            $this->data['major'] = array(
+                'name'  => 'major',
+                'id'    => 'major',
+                'type'  => 'text',
+                'value' => $this->form_validation->set_value('major'),
+            );
             $this->data['password'] = array(
                 'name'  => 'password',
                 'id'    => 'password',
@@ -538,6 +563,9 @@ class Auth extends CI_Controller {
 		$this->form_validation->set_rules('last_name', $this->lang->line('edit_user_validation_lname_label'), 'required');
 		$this->form_validation->set_rules('phone', $this->lang->line('edit_user_validation_phone_label'), 'required');
 		$this->form_validation->set_rules('company', $this->lang->line('edit_user_validation_company_label'), 'required');
+        $this->form_validation->set_rules('year', $this->lang->line('edit_user_validation_year_label'), 'required');
+        $this->form_validation->set_rules('faculty', $this->lang->line('edit_user_validation_faculty_label'), 'required');
+        $this->form_validation->set_rules('major', $this->lang->line('edit_user_validation_major_label'), 'required');
 
 		if (isset($_POST) && !empty($_POST))
 		{
@@ -561,6 +589,9 @@ class Auth extends CI_Controller {
 					'last_name'  => $this->input->post('last_name'),
 					'company'    => $this->input->post('company'),
 					'phone'      => $this->input->post('phone'),
+                    'year'      => $this->input->post('year'),
+                    'faculty'      => $this->input->post('faculty'),
+                    'major'      => $this->input->post('major'),
 				);
 
 				// update the password if it was posted
@@ -656,6 +687,24 @@ class Auth extends CI_Controller {
 			'type'  => 'text',
 			'value' => $this->form_validation->set_value('phone', $user->phone),
 		);
+        $this->data['year'] = array(
+            'name'  => 'year',
+            'id'    => 'year',
+            'type'  => 'text',
+            'value' => $this->form_validation->set_value('year', $user->year),
+        );
+        $this->data['faculty'] = array(
+            'name'  => 'faculty',
+            'id'    => 'faculty',
+            'type'  => 'text',
+            'value' => $this->form_validation->set_value('faculty', $user->faculty),
+        );
+        $this->data['major'] = array(
+            'name'  => 'major',
+            'id'    => 'major',
+            'type'  => 'text',
+            'value' => $this->form_validation->set_value('major', $user->major),
+        );
 		$this->data['password'] = array(
 			'name' => 'password',
 			'id'   => 'password',

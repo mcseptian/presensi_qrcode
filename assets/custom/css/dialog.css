@@ -1,11 +1,11 @@
 #bg_dialog{
-	background-color: rgba(0,0,0,0.7);
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	z-index: 5;
-	display:none;
-}
+	 background-color: rgba(0,0,0,0.7);
+	 width: 100%;
+	 height: 100%;
+	 position: absolute;
+	 z-index: 5;
+	 display:none;
+ }
 #tempat_box_dialog{
 	position: absolute;
 	width: 100%;
@@ -64,19 +64,20 @@
 	padding: 15px;
 	font-size: 20px;
 	color: #999;
-	border-radius: 5px 0 0 5px;
+	border-radius: 5px;
 	border: solid 2px #ddd;
 	background-color: #eee;
 	width: 70%;
 	margin:0;
+	height: 50%;
 }
 .btn_submit_dialog{
-	border-radius: 0 5px 5px 0;
+	border-radius:5px;
 	background-color: #03A5D9;
 	color: #fff;
 	font-size: 20px;
-	padding: 15px 0;
-	width: 21%;
+	padding: 11px;
+	width: 15%;
 	border: solid 2px #028AB8;
 	font-weight: bold;
 	margin:0;
@@ -84,5 +85,6 @@
 	transition:all .20s ease-in-out;
 }
 .btn_submit_dialog:hover{
-	background-color: #0086D9;
+	background-color: #E74C3B;
+	border: solid 2px #D43624;
 }
