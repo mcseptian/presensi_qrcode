@@ -1,4 +1,4 @@
-<script src="<?php echo base_url('assets/libraries/jquery.min.js'); ?>"></script>
+<script src="<?php echo base_url('assets/libraries/jquery/jquery.min.js'); ?>"></script>
 <script src="<?php echo base_url('assets/custom/js/main.js'); ?>"></script>
 
 <script type="text/javascript">
