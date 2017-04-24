@@ -9,22 +9,24 @@
     <title>Selamat Datang</title>
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Limuny Ad.S">
+    <meta name="application-name" content="Presensi QR Code">
     <link rel="icon" sizes="192x192" href="<?php echo base_url('assets/images/logo.png'); ?>">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Limuny Ad.S">
+    <meta name="apple-mobile-web-app-title" content="Presensi QR Code">
     <link rel="apple-touch-icon" href="<?php echo base_url('assets/images/logo.png'); ?>">
     <meta name="msapplication-TileImage" content="<?php echo base_url('assets/images/logo.png'); ?>">
     <meta name="msapplication-TileColor" content="#fff">
     <meta name="theme-color" content="#fff">
-	<link rel="stylesheet" href="<?php echo base_url('assets/custom/css/main.css'); ?>">
-	<link rel="stylesheet" href="<?php echo base_url('assets/custom/css/dialog.css'); ?>">
-    <link rel="stylesheet" href="<?php echo base_url('assets/custom/css/admin.css'); ?>">
+	<link rel="stylesheet" href="<?php echo base_url('assets/libraries/light-bootstrap/css/light-bootstrap-dashboard.css'); ?>">
+	<link rel="stylesheet" href="<?php echo base_url('assets/libraries/light-bootstrap/css/animate.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/libraries/light-bootstrap/css/pe-icon-7-stroke.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/libraries/light-bootstrap/css/demo.css'); ?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/libraries/bootstrap/css/bootstrap.min.css'); ?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/libraries/bootstrap/css/bootstrap-theme.min.css'); ?>">
-	<script src="<?php echo base_url('assets/libraries/qrcode/llqrcode.js'); ?>"></script>
-	<script src="<?php echo base_url('assets/libraries/qrcode/webqr.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/libraries/light-bootstrap/js/light-bootstrap-dashboard.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/libraries/light-bootstrap/js/chartist.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/libraries/light-bootstrap/js/demo.js'); ?>"></script>
 	<script src="<?php echo base_url('assets/libraries/bootstrap/js/bootstrap.min.js'); ?>"></script>		
 </head>
 <body>
