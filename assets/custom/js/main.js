@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/attic
 //closed dialog
 function close_dialog(){
 	$("#tempat_box_dialog").fadeOut(0200);
@@ -7,7 +11,7 @@ function close_dialog(){
 
 //open dialog
 function open_dialog(){
-	$("#bg_dialog").fadeIn(0300);	
+	$("#bg_dialog").fadeIn(0300);
 	$("#tempat_box_dialog").fadeIn(0300);
 }
 
