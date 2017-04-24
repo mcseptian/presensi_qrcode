@@ -7,6 +7,7 @@
 #### Auth System [Ion Auth 2](https://github.com/benedmunds/CodeIgniter-Ion-Auth)
 #### JavaScript Library [jQuery](https://github.com/jquery/jquery)
 #### QR Code Generator [Lazar Laszlo jsqrcode](https:///webqr.com/)
+#### Dashboard Template [Light Bootstrap Dashboard](https://github.com/creativetimofficial/light-bootstrap-dashboard)
 ----
 > Default Account
 
@@ -16,4 +17,4 @@
 
 > Working Database
 
->> dev (MySQL)
+>> test/dev (MySQL)
