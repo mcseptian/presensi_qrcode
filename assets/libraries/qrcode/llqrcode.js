@@ -1,5 +1,5 @@
 _aa = {};
-_aa._ab = function(f, e) {
+_aa._ab = function (f, e) {
     var d = qrcode.width;
     var b = qrcode.height;
     var c = true;
@@ -57,7 +57,7 @@ _aa._ab = function(f, e) {
         }
     }
 };
-_aa._af = function(b, d, a) {
+_aa._af = function (b, d, a) {
     var l = new _ac(d);
     var k = new Array(d << 1);
     for (var g = 0; g < d; g++) {
@@ -87,7 +87,7 @@ _aa._af = function(b, d, a) {
     }
     return l
 };
-_aa._ah = function(h, o, l, k, r, q, b, a, f, e, n, m, t, s, d, c, j, i) {
+_aa._ah = function (h, o, l, k, r, q, b, a, f, e, n, m, t, s, d, c, j, i) {
     var g = _ae._ag(l, k, r, q, b, a, f, e, n, m, t, s, d, c, j, i);
     return _aa._af(h, o, g)
 };
@@ -95,10 +95,10 @@ _aa._ah = function(h, o, l, k, r, q, b, a, f, e, n, m, t, s, d, c, j, i) {
 function _a1(b, a) {
     this.count = b;
     this._fc = a;
-    this.__defineGetter__("Count", function() {
+    this.__defineGetter__("Count", function () {
         return this.count
     });
-    this.__defineGetter__("_dm", function() {
+    this.__defineGetter__("_dm", function () {
         return this._fc
     })
 }
@@ -110,20 +110,20 @@ function _a2(a, c, b) {
     } else {
         this._do = new Array(c)
     }
-    this.__defineGetter__("_bo", function() {
+    this.__defineGetter__("_bo", function () {
         return this._bm
     });
-    this.__defineGetter__("_dn", function() {
+    this.__defineGetter__("_dn", function () {
         return this._bm * this._fo
     });
-    this.__defineGetter__("_fo", function() {
+    this.__defineGetter__("_fo", function () {
         var e = 0;
         for (var d = 0; d < this._do.length; d++) {
             e += this._do[d].length
         }
         return e
     });
-    this._fb = function() {
+    this._fb = function () {
         return this._do
     }
 }
@@ -140,19 +140,19 @@ function _a3(k, l, h, g, f, e) {
         j += c.Count * (c._dm + b)
     }
     this._br = j;
-    this.__defineGetter__("_fd", function() {
+    this.__defineGetter__("_fd", function () {
         return this._bs
     });
-    this.__defineGetter__("_as", function() {
+    this.__defineGetter__("_as", function () {
         return this._ar
     });
-    this.__defineGetter__("_dp", function() {
+    this.__defineGetter__("_dp", function () {
         return this._br
     });
-    this.__defineGetter__("_cr", function() {
+    this.__defineGetter__("_cr", function () {
         return 17 + 4 * this._bs
     });
-    this._aq = function() {
+    this._aq = function () {
         var r = this._cr;
         var o = new _ac(r);
         o._bq(0, 0, 9, 9);
@@ -176,19 +176,19 @@ function _a3(k, l, h, g, f, e) {
         }
         return o
     };
-    this._bu = function(i) {
+    this._bu = function (i) {
         return this._do[i.ordinal()]
     }
 }
 _a3._bv = new Array(31892, 34236, 39577, 42195, 48118, 51042, 55367, 58893, 63784, 68472, 70749, 76311, 79154, 84390, 87683, 92361, 96236, 102084, 102881, 110507, 110734, 117786, 119615, 126325, 127568, 133589, 136944, 141498, 145311, 150283, 152622, 158308, 161089, 167017);
 _a3.VERSIONS = _ay();
-_a3._av = function(a) {
+_a3._av = function (a) {
     if (a < 1 || a > 40) {
         throw "bad arguments"
     }
     return _a3.VERSIONS[a - 1]
 };
-_a3._at = function(b) {
+_a3._at = function (b) {
     if (b % 4 != 1) {
         throw "Error _at"
     }
@@ -198,7 +198,7 @@ _a3._at = function(b) {
         throw "Error _av"
     }
 };
-_a3._aw = function(d) {
+_a3._aw = function (d) {
     var b = 4294967295;
     var f = 0;
     for (var c = 0; c < _a3._bv.length; c++) {
@@ -232,7 +232,7 @@ function _ae(i, f, c, h, e, b, g, d, a) {
     this.a31 = c;
     this.a32 = b;
     this.a33 = a;
-    this._ad = function(w) {
+    this._ad = function (w) {
         var t = w.length;
         var A = this.a11;
         var z = this.a12;
@@ -251,7 +251,7 @@ function _ae(i, f, c, h, e, b, g, d, a) {
             w[n + 1] = (z * u + q * s + k) / l
         }
     };
-    this._fp = function(m, k) {
+    this._fp = function (m, k) {
         var r = m.length;
         for (var l = 0; l < r; l++) {
             var j = m[l];
@@ -261,19 +261,19 @@ function _ae(i, f, c, h, e, b, g, d, a) {
             k[l] = (this.a12 * j + this.a22 * q + this.a32) / o
         }
     };
-    this._fr = function() {
+    this._fr = function () {
         return new _ae(this.a22 * this.a33 - this.a23 * this.a32, this.a23 * this.a31 - this.a21 * this.a33, this.a21 * this.a32 - this.a22 * this.a31, this.a13 * this.a32 - this.a12 * this.a33, this.a11 * this.a33 - this.a13 * this.a31, this.a12 * this.a31 - this.a11 * this.a32, this.a12 * this.a23 - this.a13 * this.a22, this.a13 * this.a21 - this.a11 * this.a23, this.a11 * this.a22 - this.a12 * this.a21)
     };
-    this.times = function(j) {
+    this.times = function (j) {
         return new _ae(this.a11 * j.a11 + this.a21 * j.a12 + this.a31 * j.a13, this.a11 * j.a21 + this.a21 * j.a22 + this.a31 * j.a23, this.a11 * j.a31 + this.a21 * j.a32 + this.a31 * j.a33, this.a12 * j.a11 + this.a22 * j.a12 + this.a32 * j.a13, this.a12 * j.a21 + this.a22 * j.a22 + this.a32 * j.a23, this.a12 * j.a31 + this.a22 * j.a32 + this.a32 * j.a33, this.a13 * j.a11 + this.a23 * j.a12 + this.a33 * j.a13, this.a13 * j.a21 + this.a23 * j.a22 + this.a33 * j.a23, this.a13 * j.a31 + this.a23 * j.a32 + this.a33 * j.a33)
     }
 }
-_ae._ag = function(q, e, o, d, n, c, m, b, h, r, l, f, a, j, i, s) {
+_ae._ag = function (q, e, o, d, n, c, m, b, h, r, l, f, a, j, i, s) {
     var g = this._be(q, e, o, d, n, c, m, b);
     var k = this._bf(h, r, l, f, a, j, i, s);
     return k.times(g)
 };
-_ae._bf = function(f, h, d, g, b, e, a, c) {
+_ae._bf = function (f, h, d, g, b, e, a, c) {
     dy2 = c - e;
     dy3 = h - g + e - c;
     if (dy2 == 0 && dy3 == 0) {
@@ -289,7 +289,7 @@ _ae._bf = function(f, h, d, g, b, e, a, c) {
         return new _ae(d - f + a13 * d, a - f + a23 * a, f, g - h + a13 * g, c - h + a23 * c, h, a13, a23, 1)
     }
 };
-_ae._be = function(f, h, d, g, b, e, a, c) {
+_ae._be = function (f, h, d, g, b, e, a, c) {
     return this._bf(f, h, d, g, b, e, a, c)._fr()
 };
 
@@ -301,7 +301,7 @@ function _bg(b, a) {
 function Detector(a) {
     this.image = a;
     this._am = null;
-    this._bi = function(m, l, c, b) {
+    this._bi = function (m, l, c, b) {
         var d = Math.abs(b - l) > Math.abs(c - m);
         if (d) {
             var s = m;
@@ -347,7 +347,7 @@ function Detector(a) {
         var r = b - l;
         return Math.sqrt((k * k + r * r))
     };
-    this._bh = function(i, g, h, f) {
+    this._bh = function (i, g, h, f) {
         var b = this._bi(i, g, h, f);
         var e = 1;
         var d = i - (h - i);
@@ -375,7 +375,7 @@ function Detector(a) {
         b += this._bi(i, g, d, c);
         return b - 1
     };
-    this._bj = function(c, d) {
+    this._bj = function (c, d) {
         var b = this._bh(Math.floor(c.X), Math.floor(c.Y), Math.floor(d.X), Math.floor(d.Y));
         var e = this._bh(Math.floor(d.X), Math.floor(d.Y), Math.floor(c.X), Math.floor(c.Y));
         if (isNaN(b)) {
@@ -386,15 +386,15 @@ function Detector(a) {
         }
         return (b + e) / 14
     };
-    this._bk = function(d, c, b) {
+    this._bk = function (d, c, b) {
         return (this._bj(d, c) + this._bj(d, b)) / 2
     };
-    this.distance = function(c, b) {
+    this.distance = function (c, b) {
         xDiff = c.X - b.X;
         yDiff = c.Y - b.Y;
         return Math.sqrt((xDiff * xDiff + yDiff * yDiff))
     };
-    this._bx = function(g, f, d, e) {
+    this._bx = function (g, f, d, e) {
         var b = Math.round(this.distance(g, f) / e);
         var c = Math.round(this.distance(g, d) / e);
         var h = ((b + c) >> 1) + 7;
@@ -410,7 +410,7 @@ function Detector(a) {
         }
         return h
     };
-    this._bl = function(g, f, d, j) {
+    this._bl = function (g, f, d, j) {
         var k = Math.floor(j * g);
         var h = Math.max(0, f - k);
         var i = Math.min(qrcode.width - 1, f + k);
@@ -422,7 +422,7 @@ function Detector(a) {
         var e = new _ak(this.image, h, b, i - h, c - b, g, this._am);
         return e.find()
     };
-    this.createTransform = function(l, h, k, b, g) {
+    this.createTransform = function (l, h, k, b, g) {
         var j = g - 3.5;
         var i;
         var f;
@@ -440,11 +440,11 @@ function Detector(a) {
         var d = _ae._ag(3.5, 3.5, j, 3.5, e, c, 3.5, j, l.X, l.Y, h.X, h.Y, i, f, k.X, k.Y);
         return d
     };
-    this._bz = function(e, b, d) {
+    this._bz = function (e, b, d) {
         var c = _aa;
         return c._af(e, d, b)
     };
-    this._cd = function(r) {
+    this._cd = function (r) {
         var j = r._gq;
         var h = r._gs;
         var n = r._gp;
@@ -477,7 +477,7 @@ function Detector(a) {
         }
         return new _bg(m, o)
     };
-    this.detect = function() {
+    this.detect = function () {
         var b = new _cc()._ce(this.image);
         return this._cd(b)
     }
@@ -489,32 +489,32 @@ var _ch = new Array(0, 1, 1, 2, 1, 2, 2, 3, 1, 2, 2, 3, 2, 3, 3, 4);
 function _ax(a) {
     this._cf = _cg.forBits((a >> 3) & 3);
     this._fe = (a & 7);
-    this.__defineGetter__("_cg", function() {
+    this.__defineGetter__("_cg", function () {
         return this._cf
     });
-    this.__defineGetter__("_dx", function() {
+    this.__defineGetter__("_dx", function () {
         return this._fe
     });
-    this.GetHashCode = function() {
+    this.GetHashCode = function () {
         return (this._cf.ordinal() << 3) | _fe
     };
-    this.Equals = function(c) {
+    this.Equals = function (c) {
         var b = c;
         return this._cf == b._cf && this._fe == b._fe
     }
 }
-_ax._gj = function(d, c) {
+_ax._gj = function (d, c) {
     d ^= c;
     return _ch[d & 15] + _ch[(_ew(d, 4) & 15)] + _ch[(_ew(d, 8) & 15)] + _ch[(_ew(d, 12) & 15)] + _ch[(_ew(d, 16) & 15)] + _ch[(_ew(d, 20) & 15)] + _ch[(_ew(d, 24) & 15)] + _ch[(_ew(d, 28) & 15)]
 };
-_ax._ci = function(a) {
+_ax._ci = function (a) {
     var b = _ax._cj(a);
     if (b != null) {
         return b
     }
     return _ax._cj(a ^ _ca)
 };
-_ax._cj = function(d) {
+_ax._cj = function (d) {
     var b = 4294967295;
     var a = 0;
     for (var c = 0; c < _cb.length; c++) {
@@ -539,17 +539,17 @@ function _cg(a, c, b) {
     this._ff = a;
     this.bits = c;
     this.name = b;
-    this.__defineGetter__("Bits", function() {
+    this.__defineGetter__("Bits", function () {
         return this.bits
     });
-    this.__defineGetter__("Name", function() {
+    this.__defineGetter__("Name", function () {
         return this.name
     });
-    this.ordinal = function() {
+    this.ordinal = function () {
         return this._ff
     }
 }
-_cg.forBits = function(a) {
+_cg.forBits = function (a) {
     if (a < 0 || a >= FOR_BITS.length) {
         throw "bad arguments"
     }
@@ -579,37 +579,37 @@ function _ac(d, a) {
     for (var b = 0; b < this.bits.length; b++) {
         this.bits[b] = 0
     }
-    this.__defineGetter__("Width", function() {
+    this.__defineGetter__("Width", function () {
         return this.width
     });
-    this.__defineGetter__("Height", function() {
+    this.__defineGetter__("Height", function () {
         return this.height
     });
-    this.__defineGetter__("Dimension", function() {
+    this.__defineGetter__("Dimension", function () {
         if (this.width != this.height) {
             throw "Can't call getDimension() on a non-square matrix"
         }
         return this.width
     });
-    this._ds = function(e, g) {
+    this._ds = function (e, g) {
         var f = g * this.rowSize + (e >> 5);
         return ((_ew(this.bits[f], (e & 31))) & 1) != 0
     };
-    this._dq = function(e, g) {
+    this._dq = function (e, g) {
         var f = g * this.rowSize + (e >> 5);
         this.bits[f] |= 1 << (e & 31)
     };
-    this.flip = function(e, g) {
+    this.flip = function (e, g) {
         var f = g * this.rowSize + (e >> 5);
         this.bits[f] ^= 1 << (e & 31)
     };
-    this.clear = function() {
+    this.clear = function () {
         var e = this.bits.length;
         for (var f = 0; f < e; f++) {
             this.bits[f] = 0
         }
     };
-    this._bq = function(g, j, f, m) {
+    this._bq = function (g, j, f, m) {
         if (j < 0 || g < 0) {
             throw "Left and top must be nonnegative"
         }
@@ -633,14 +633,14 @@ function _ac(d, a) {
 function _dl(a, b) {
     this._dv = a;
     this._dw = b;
-    this.__defineGetter__("_du", function() {
+    this.__defineGetter__("_du", function () {
         return this._dv
     });
-    this.__defineGetter__("Codewords", function() {
+    this.__defineGetter__("Codewords", function () {
         return this._dw
     })
 }
-_dl._gn = function(c, h, s) {
+_dl._gn = function (c, h, s) {
     if (c.length != h._dp) {
         throw "bad arguments"
     }
@@ -698,10 +698,10 @@ function _cl(a) {
     this._au = a;
     this._cp = null;
     this._co = null;
-    this._dk = function(d, c, e) {
+    this._dk = function (d, c, e) {
         return this._au._ds(d, c) ? (e << 1) | 1 : e << 1
     };
-    this._cm = function() {
+    this._cm = function () {
         if (this._co != null) {
             return this._co
         }
@@ -734,7 +734,7 @@ function _cl(a) {
         }
         throw "Error _cm"
     };
-    this._cq = function() {
+    this._cq = function () {
         if (this._cp != null) {
             return this._cp
         }
@@ -766,7 +766,7 @@ function _cl(a) {
         }
         throw "Error _cq"
     };
-    this._gk = function() {
+    this._gk = function () {
         var r = this._cm();
         var o = this._cq();
         var c = _dx._gl(r._dx);
@@ -808,7 +808,7 @@ function _cl(a) {
     }
 }
 _dx = {};
-_dx._gl = function(a) {
+_dx._gl = function (a) {
     if (a < 0 || a > 7) {
         throw "bad arguments"
     }
@@ -816,7 +816,7 @@ _dx._gl = function(a) {
 };
 
 function _fg() {
-    this._dj = function(c, d) {
+    this._dj = function (c, d) {
         for (var b = 0; b < d; b++) {
             for (var a = 0; a < d; a++) {
                 if (this._fw(b, a)) {
@@ -825,13 +825,13 @@ function _fg() {
             }
         }
     };
-    this._fw = function(b, a) {
+    this._fw = function (b, a) {
         return ((b + a) & 1) == 0
     }
 }
 
 function _fh() {
-    this._dj = function(c, d) {
+    this._dj = function (c, d) {
         for (var b = 0; b < d; b++) {
             for (var a = 0; a < d; a++) {
                 if (this._fw(b, a)) {
@@ -840,13 +840,13 @@ function _fh() {
             }
         }
     };
-    this._fw = function(b, a) {
+    this._fw = function (b, a) {
         return (b & 1) == 0
     }
 }
 
 function _fi() {
-    this._dj = function(c, d) {
+    this._dj = function (c, d) {
         for (var b = 0; b < d; b++) {
             for (var a = 0; a < d; a++) {
                 if (this._fw(b, a)) {
@@ -855,13 +855,13 @@ function _fi() {
             }
         }
     };
-    this._fw = function(b, a) {
+    this._fw = function (b, a) {
         return a % 3 == 0
     }
 }
 
 function _fj() {
-    this._dj = function(c, d) {
+    this._dj = function (c, d) {
         for (var b = 0; b < d; b++) {
             for (var a = 0; a < d; a++) {
                 if (this._fw(b, a)) {
@@ -870,13 +870,13 @@ function _fj() {
             }
         }
     };
-    this._fw = function(b, a) {
+    this._fw = function (b, a) {
         return (b + a) % 3 == 0
     }
 }
 
 function _fk() {
-    this._dj = function(c, d) {
+    this._dj = function (c, d) {
         for (var b = 0; b < d; b++) {
             for (var a = 0; a < d; a++) {
                 if (this._fw(b, a)) {
@@ -885,13 +885,13 @@ function _fk() {
             }
         }
     };
-    this._fw = function(b, a) {
+    this._fw = function (b, a) {
         return (((_ew(b, 1)) + (a / 3)) & 1) == 0
     }
 }
 
 function _fl() {
-    this._dj = function(c, d) {
+    this._dj = function (c, d) {
         for (var b = 0; b < d; b++) {
             for (var a = 0; a < d; a++) {
                 if (this._fw(b, a)) {
@@ -900,14 +900,14 @@ function _fl() {
             }
         }
     };
-    this._fw = function(c, b) {
+    this._fw = function (c, b) {
         var a = c * b;
         return (a & 1) + (a % 3) == 0
     }
 }
 
 function _fm() {
-    this._dj = function(c, d) {
+    this._dj = function (c, d) {
         for (var b = 0; b < d; b++) {
             for (var a = 0; a < d; a++) {
                 if (this._fw(b, a)) {
@@ -916,14 +916,14 @@ function _fm() {
             }
         }
     };
-    this._fw = function(c, b) {
+    this._fw = function (c, b) {
         var a = c * b;
         return (((a & 1) + (a % 3)) & 1) == 0
     }
 }
 
 function _fn() {
-    this._dj = function(c, d) {
+    this._dj = function (c, d) {
         for (var b = 0; b < d; b++) {
             for (var a = 0; a < d; a++) {
                 if (this._fw(b, a)) {
@@ -932,7 +932,7 @@ function _fn() {
             }
         }
     };
-    this._fw = function(b, a) {
+    this._fw = function (b, a) {
         return ((((b + a) & 1) + ((b * a) % 3)) & 1) == 0
     }
 }
@@ -940,7 +940,7 @@ _dx._dy = new Array(new _fg(), new _fh(), new _fi(), new _fj(), new _fk(), new _
 
 function _db(_fa) {
     this._fa = _fa;
-    this.decode = function(received, _fv) {
+    this.decode = function (received, _fv) {
         var poly = new _bp(this._fa, received);
         var _dh = new Array(_fv);
         for (var i = 0; i < _dh.length; i++) {
@@ -972,7 +972,7 @@ function _db(_fa) {
             received[position] = _az._bd(received[position], _ea[i])
         }
     };
-    this._eb = function(a, b, R) {
+    this._eb = function (a, b, R) {
         if (a._ec < b._ec) {
             var temp = a;
             a = b;
@@ -1016,7 +1016,7 @@ function _db(_fa) {
         var omega = r.multiply2(inverse);
         return new Array(sigma, omega)
     };
-    this._ey = function(_ez) {
+    this._ey = function (_ez) {
         var _fz = _ez._ec;
         if (_fz == 1) {
             return new Array(_ez._ex(1))
@@ -1034,7 +1034,7 @@ function _db(_fa) {
         }
         return result
     };
-    this._di = function(_fs, _dz, _fq) {
+    this._di = function (_fs, _dz, _fq) {
         var s = _dz.length;
         var result = new Array(s);
         for (var i = 0; i < s; i++) {
@@ -1079,19 +1079,19 @@ function _bp(f, e) {
     } else {
         this._dd = e
     }
-    this.__defineGetter__("Zero", function() {
+    this.__defineGetter__("Zero", function () {
         return this._dd[0] == 0
     });
-    this.__defineGetter__("_ec", function() {
+    this.__defineGetter__("_ec", function () {
         return this._dd.length - 1
     });
-    this.__defineGetter__("Coefficients", function() {
+    this.__defineGetter__("Coefficients", function () {
         return this._dd
     });
-    this._ex = function(g) {
+    this._ex = function (g) {
         return this._dd[this._dd.length - 1 - g]
     };
-    this.evaluateAt = function(h) {
+    this.evaluateAt = function (h) {
         if (h == 0) {
             return this._ex(0)
         }
@@ -1109,7 +1109,7 @@ function _bp(f, e) {
         }
         return j
     };
-    this._bd = function(g) {
+    this._bd = function (g) {
         if (this._fa != g._fa) {
             throw "GF256Polys do not have same _az _fa"
         }
@@ -1136,7 +1136,7 @@ function _bp(f, e) {
         }
         return new _bp(f, h)
     };
-    this.multiply1 = function(o) {
+    this.multiply1 = function (o) {
         if (this._fa != o._fa) {
             throw "GF256Polys do not have same _az _fa"
         }
@@ -1156,7 +1156,7 @@ function _bp(f, e) {
         }
         return new _bp(this._fa, q)
     };
-    this.multiply2 = function(g) {
+    this.multiply2 = function (g) {
         if (g == 0) {
             return this._fa.Zero
         }
@@ -1170,7 +1170,7 @@ function _bp(f, e) {
         }
         return new _bp(this._fa, k)
     };
-    this._dc = function(l, g) {
+    this._dc = function (l, g) {
         if (l < 0) {
             throw "bad arguments"
         }
@@ -1187,7 +1187,7 @@ function _bp(f, e) {
         }
         return new _bp(this._fa, k)
     };
-    this.divide = function(l) {
+    this.divide = function (l) {
         if (this._fa != l._fa) {
             throw "GF256Polys do not have same _az _fa"
         }
@@ -1230,13 +1230,13 @@ function _az(b) {
     var c = new Array(1);
     c[0] = 1;
     this.one = new _bp(this, new Array(c));
-    this.__defineGetter__("Zero", function() {
+    this.__defineGetter__("Zero", function () {
         return this.zero
     });
-    this.__defineGetter__("One", function() {
+    this.__defineGetter__("One", function () {
         return this.one
     });
-    this._ba = function(j, f) {
+    this._ba = function (j, f) {
         if (j < 0) {
             throw "bad arguments"
         }
@@ -1250,22 +1250,22 @@ function _az(b) {
         h[0] = f;
         return new _bp(this, h)
     };
-    this.exp = function(f) {
+    this.exp = function (f) {
         return this._gh[f]
     };
-    this.log = function(f) {
+    this.log = function (f) {
         if (f == 0) {
             throw "bad arguments"
         }
         return this._gi[f]
     };
-    this.inverse = function(f) {
+    this.inverse = function (f) {
         if (f == 0) {
             throw "System.ArithmeticException"
         }
         return this._gh[255 - this._gi[f]]
     };
-    this.multiply = function(g, f) {
+    this.multiply = function (g, f) {
         if (g == 0 || f == 0) {
             return 0
         }
@@ -1280,12 +1280,12 @@ function _az(b) {
 }
 _az._bb = new _az(285);
 _az._bc = new _az(301);
-_az._bd = function(d, c) {
+_az._bd = function (d, c) {
     return d ^ c
 };
 Decoder = {};
 Decoder.rsDecoder = new _db(_az._bb);
-Decoder.correctErrors = function(g, b) {
+Decoder.correctErrors = function (g, b) {
     var d = g.length;
     var f = new Array(d);
     for (var e = 0; e < d; e++) {
@@ -1301,7 +1301,7 @@ Decoder.correctErrors = function(g, b) {
         g[e] = f[e]
     }
 };
-Decoder.decode = function(r) {
+Decoder.decode = function (r) {
     var b = new _cl(r);
     var o = b._cq();
     var c = b._cm()._cg;
@@ -1338,7 +1338,7 @@ qrcode._eo = [
     [14, 13, 16, 12]
 ];
 qrcode.callback = null;
-qrcode.decode = function(d) {
+qrcode.decode = function (d) {
     if (arguments.length == 0) {
         var b = document.getElementById("qr-canvas");
         var a = b.getContext("2d");
@@ -1352,7 +1352,7 @@ qrcode.decode = function(d) {
         return qrcode.result
     } else {
         var c = new Image();
-        c.onload = function() {
+        c.onload = function () {
             var g = document.getElementById("out-canvas");
             if (g != null) {
                 var j = g.getContext("2d");
@@ -1395,11 +1395,11 @@ qrcode.decode = function(d) {
         c.src = d
     }
 };
-qrcode.isUrl = function(a) {
+qrcode.isUrl = function (a) {
     var b = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
     return b.test(a)
 };
-qrcode.decode_url = function(b) {
+qrcode.decode_url = function (b) {
     var d = "";
     try {
         d = escape(b)
@@ -1416,14 +1416,14 @@ qrcode.decode_url = function(b) {
     }
     return a
 };
-qrcode.decode_utf8 = function(a) {
+qrcode.decode_utf8 = function (a) {
     if (qrcode.isUrl(a)) {
         return qrcode.decode_url(a)
     } else {
         return a
     }
 };
-qrcode.process = function(r) {
+qrcode.process = function (r) {
     var a = new Date().getTime();
     var c = qrcode.grayScaleToBitmap(qrcode.grayscale());
     if (qrcode.debug) {
@@ -1455,7 +1455,7 @@ qrcode.process = function(r) {
     console.log(b);
     return qrcode.decode_utf8(l)
 };
-qrcode.getPixel = function(a, b) {
+qrcode.getPixel = function (a, b) {
     if (qrcode.width < a) {
         throw "point error"
     }
@@ -1466,7 +1466,7 @@ qrcode.getPixel = function(a, b) {
     p = (qrcode.imagedata.data[point] * 33 + qrcode.imagedata.data[point + 1] * 34 + qrcode.imagedata.data[point + 2] * 33) / 100;
     return p
 };
-qrcode.binarize = function(d) {
+qrcode.binarize = function (d) {
     var c = new Array(qrcode.width * qrcode.height);
     for (var e = 0; e < qrcode.height; e++) {
         for (var b = 0; b < qrcode.width; b++) {
@@ -1476,7 +1476,7 @@ qrcode.binarize = function(d) {
     }
     return c
 };
-qrcode._em = function(d) {
+qrcode._em = function (d) {
     var c = 4;
     var k = Math.floor(qrcode.width / c);
     var j = Math.floor(qrcode.height / c);
@@ -1514,7 +1514,7 @@ qrcode._em = function(d) {
     }
     return m
 };
-qrcode.grayScaleToBitmap = function(f) {
+qrcode.grayScaleToBitmap = function (f) {
     var j = qrcode._em(f);
     var b = j.length;
     var e = Math.floor(qrcode.width / b);
@@ -1531,7 +1531,7 @@ qrcode.grayScaleToBitmap = function(f) {
     }
     return c
 };
-qrcode.grayscale = function() {
+qrcode.grayscale = function () {
     var c = new Array(qrcode.width * qrcode.height);
     for (var d = 0; d < qrcode.height; d++) {
         for (var b = 0; b < qrcode.width; b++) {
@@ -1549,7 +1549,7 @@ function _ew(a, b) {
         return (a >> b) + (2 << ~b)
     }
 }
-Array.prototype.remove = function(c, b) {
+Array.prototype.remove = function (c, b) {
     var a = this.slice((b || c) + 1 || this.length);
     this.length = c < 0 ? this.length + c : c;
     return this.push.apply(this, a)
@@ -1558,7 +1558,7 @@ var _gf = 3;
 var _eh = 57;
 var _el = 8;
 var _eg = 2;
-qrcode._er = function(c) {
+qrcode._er = function (c) {
     function b(l, k) {
         xDiff = l.X - k.X;
         yDiff = l.Y - k.Y;
@@ -1570,6 +1570,7 @@ qrcode._er = function(c) {
         var l = o.y;
         return ((n.x - m) * (k.y - l)) - ((n.y - l) * (k.x - m))
     }
+
     var i = b(c[0], c[1]);
     var f = b(c[1], c[2]);
     var e = b(c[0], c[2]);
@@ -1604,22 +1605,22 @@ function _cz(c, a, b) {
     this.y = a;
     this.count = 1;
     this._aj = b;
-    this.__defineGetter__("_ei", function() {
+    this.__defineGetter__("_ei", function () {
         return this._aj
     });
-    this.__defineGetter__("Count", function() {
+    this.__defineGetter__("Count", function () {
         return this.count
     });
-    this.__defineGetter__("X", function() {
+    this.__defineGetter__("X", function () {
         return this.x
     });
-    this.__defineGetter__("Y", function() {
+    this.__defineGetter__("Y", function () {
         return this.y
     });
-    this._ek = function() {
+    this._ek = function () {
         this.count++
     };
-    this._ev = function(f, e, d) {
+    this._ev = function (f, e, d) {
         if (Math.abs(e - this.y) <= f && Math.abs(d - this.x) <= f) {
             var g = Math.abs(f - this._aj);
             return g <= 1 || g / this._aj <= 1
@@ -1632,13 +1633,13 @@ function _es(a) {
     this._go = a[0];
     this._gu = a[1];
     this._gr = a[2];
-    this.__defineGetter__("_gp", function() {
+    this.__defineGetter__("_gp", function () {
         return this._go
     });
-    this.__defineGetter__("_gq", function() {
+    this.__defineGetter__("_gq", function () {
         return this._gu
     });
-    this.__defineGetter__("_gs", function() {
+    this.__defineGetter__("_gs", function () {
         return this._gr
     })
 }
@@ -1649,7 +1650,7 @@ function _cc() {
     this._ge = false;
     this._al = new Array(0, 0, 0, 0, 0);
     this._am = null;
-    this.__defineGetter__("_da", function() {
+    this.__defineGetter__("_da", function () {
         this._al[0] = 0;
         this._al[1] = 0;
         this._al[2] = 0;
@@ -1657,7 +1658,7 @@ function _cc() {
         this._al[4] = 0;
         return this._al
     });
-    this._ao = function(f) {
+    this._ao = function (f) {
         var b = 0;
         for (var d = 0; d < 5; d++) {
             var e = f[d];
@@ -1673,10 +1674,10 @@ function _cc() {
         var a = Math.floor(c / 2);
         return Math.abs(c - (f[0] << _el)) < a && Math.abs(c - (f[1] << _el)) < a && Math.abs(3 * c - (f[2] << _el)) < 3 * a && Math.abs(c - (f[3] << _el)) < a && Math.abs(c - (f[4] << _el)) < a
     };
-    this._an = function(b, a) {
+    this._an = function (b, a) {
         return (a - b[4] - b[3]) - b[2] / 2
     };
-    this._ap = function(a, j, d, g) {
+    this._ap = function (a, j, d, g) {
         var c = this.image;
         var h = qrcode.height;
         var b = this._da;
@@ -1730,7 +1731,7 @@ function _cc() {
         }
         return this._ao(b) ? this._an(b, f) : NaN
     };
-    this._ej = function(b, a, e, h) {
+    this._ej = function (b, a, e, h) {
         var d = this.image;
         var i = qrcode.width;
         var c = this._da;
@@ -1784,7 +1785,7 @@ function _cc() {
         }
         return this._ao(c) ? this._an(c, g) : NaN
     };
-    this._cu = function(c, f, e) {
+    this._cu = function (c, f, e) {
         var d = c[0] + c[1] + c[2] + c[3] + c[4];
         var n = this._an(c, e);
         var b = this._ap(f, Math.floor(n), c[2], d);
@@ -1814,7 +1815,7 @@ function _cc() {
         }
         return false
     };
-    this._ee = function() {
+    this._ee = function () {
         var h = this._cv.length;
         if (h < 3) {
             throw "Couldn't find enough finder patterns"
@@ -1828,7 +1829,7 @@ function _cc() {
                 j += (g * g)
             }
             var a = b / h;
-            this._cv.sort(function(m, l) {
+            this._cv.sort(function (m, l) {
                 var k = Math.abs(l._ei - a);
                 var i = Math.abs(m._ei - a);
                 if (k < i) {
@@ -1852,7 +1853,7 @@ function _cc() {
             }
         }
         if (this._cv.length > 3) {
-            this._cv.sort(function(k, i) {
+            this._cv.sort(function (k, i) {
                 if (k.count > i.count) {
                     return -1
                 }
@@ -1864,7 +1865,7 @@ function _cc() {
         }
         return new Array(this._cv[0], this._cv[1], this._cv[2])
     };
-    this._eq = function() {
+    this._eq = function () {
         var b = this._cv.length;
         if (b <= 1) {
             return 0
@@ -1883,7 +1884,7 @@ function _cc() {
         }
         return 0
     };
-    this._cx = function() {
+    this._cx = function () {
         var g = 0;
         var c = 0;
         var a = this._cv.length;
@@ -1905,7 +1906,7 @@ function _cc() {
         }
         return b <= 0.05 * c
     };
-    this._ce = function(e) {
+    this._ce = function (e) {
         var o = false;
         this.image = e;
         var n = qrcode.height;
@@ -1994,22 +1995,22 @@ function _ai(c, a, b) {
     this.y = a;
     this.count = 1;
     this._aj = b;
-    this.__defineGetter__("_ei", function() {
+    this.__defineGetter__("_ei", function () {
         return this._aj
     });
-    this.__defineGetter__("Count", function() {
+    this.__defineGetter__("Count", function () {
         return this.count
     });
-    this.__defineGetter__("X", function() {
+    this.__defineGetter__("X", function () {
         return Math.floor(this.x)
     });
-    this.__defineGetter__("Y", function() {
+    this.__defineGetter__("Y", function () {
         return Math.floor(this.y)
     });
-    this._ek = function() {
+    this._ek = function () {
         this.count++
     };
-    this._ev = function(f, e, d) {
+    this._ev = function (f, e, d) {
         if (Math.abs(e - this.y) <= f && Math.abs(d - this.x) <= f) {
             var g = Math.abs(f - this._aj);
             return g <= 1 || g / this._aj <= 1
@@ -2028,10 +2029,10 @@ function _ak(g, c, b, f, a, e, d) {
     this._ef = e;
     this._al = new Array(0, 0, 0);
     this._am = d;
-    this._an = function(i, h) {
+    this._an = function (i, h) {
         return (h - i[2]) - i[1] / 2
     };
-    this._ao = function(l) {
+    this._ao = function (l) {
         var k = this._ef;
         var h = k / 2;
         for (var j = 0; j < 3; j++) {
@@ -2041,7 +2042,7 @@ function _ak(g, c, b, f, a, e, d) {
         }
         return true
     };
-    this._ap = function(h, r, l, o) {
+    this._ap = function (h, r, l, o) {
         var k = this.image;
         var q = qrcode.height;
         var j = this._al;
@@ -2084,7 +2085,7 @@ function _ak(g, c, b, f, a, e, d) {
         }
         return this._ao(j) ? this._an(j, n) : NaN
     };
-    this._cu = function(l, o, n) {
+    this._cu = function (l, o, n) {
         var m = l[0] + l[1] + l[2];
         var u = this._an(l, n);
         var k = this._ap(o, Math.floor(u), 2 * l[1], m);
@@ -2105,7 +2106,7 @@ function _ak(g, c, b, f, a, e, d) {
         }
         return null
     };
-    this.find = function() {
+    this.find = function () {
         var q = this.startX;
         var t = this.height;
         var r = q + f;
@@ -2180,7 +2181,7 @@ function QRCodeDataBlockReader(c, a, b) {
             }
         }
     }
-    this._gd = function(f) {
+    this._gd = function (f) {
         var k = 0;
         if (f < this._cw + 1) {
             var m = 0;
@@ -2233,14 +2234,14 @@ function QRCodeDataBlockReader(c, a, b) {
             }
         }
     };
-    this.NextMode = function() {
+    this.NextMode = function () {
         if ((this._ed > this.blocks.length - this._en - 2)) {
             return 0
         } else {
             return this._gd(4)
         }
     };
-    this.getDataLength = function(d) {
+    this.getDataLength = function (d) {
         var e = 0;
         while (true) {
             if ((d >> e) == 1) {
@@ -2250,7 +2251,7 @@ function QRCodeDataBlockReader(c, a, b) {
         }
         return this._gd(qrcode._eo[this.dataLengthMode][e])
     };
-    this.getRomanAndFigureString = function(h) {
+    this.getRomanAndFigureString = function (h) {
         var f = h;
         var g = 0;
         var j = "";
@@ -2273,7 +2274,7 @@ function QRCodeDataBlockReader(c, a, b) {
         } while (f > 0);
         return j
     };
-    this.getFigureString = function(f) {
+    this.getFigureString = function (f) {
         var d = f;
         var e = 0;
         var g = "";
@@ -2305,7 +2306,7 @@ function QRCodeDataBlockReader(c, a, b) {
         } while (d > 0);
         return g
     };
-    this.get8bitByteArray = function(g) {
+    this.get8bitByteArray = function (g) {
         var e = g;
         var f = 0;
         var d = new Array();
@@ -2316,7 +2317,7 @@ function QRCodeDataBlockReader(c, a, b) {
         } while (e > 0);
         return d
     };
-    this.getKanjiString = function(j) {
+    this.getKanjiString = function (j) {
         var g = j;
         var i = 0;
         var h = "";
@@ -2336,7 +2337,7 @@ function QRCodeDataBlockReader(c, a, b) {
         } while (g > 0);
         return h
     };
-    this.__defineGetter__("DataByte", function() {
+    this.__defineGetter__("DataByte", function () {
         var g = new Array();
         var e = 1;
         var f = 2;

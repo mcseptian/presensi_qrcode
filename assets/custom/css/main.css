@@ -1,249 +1,287 @@
-body{
-	padding:0;
-	margin:0;
-	background-color:#f2f2f2;
-	font-size:12px;
-	color:#999;
-	font-family: 'Arial';
-	overflow-x: hidden;
-	overflow-y: hidden;
-	transition:all .20s ease-in-out;
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #f2f2f2;
+    font-size: 12px;
+    color: #999;
+    font-family: 'Arial';
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: all .20s ease-in-out;
 }
-.bold{font-weight: bold;}
-.italic{font-style: italic;}
-.underline{text-decoration: underline;}
-.clear{clear:both;}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.clear {
+    clear: both;
+}
 
 /* -----Style untuk header----- */
-.garis_biru{
-	background-color: #03A5D9;
-	height: 7px;
-	width: 70%;
-	margin:0 auto;
-	border-radius: 0 0 10px 10px;
-	z-index: 1;
+.garis_biru {
+    background-color: #03A5D9;
+    height: 7px;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 0 0 10px 10px;
+    z-index: 1;
 }
-.wrap_waktu{
-	background-color:#e5e5e5;
-	border-radius: 0 0 10px 10px;
-	padding:15px;
-	width: 250px;
-	margin:-8px auto 0 auto;
-	font-weight: bold;
-	text-align: center;
-	z-index: 2;
+
+.wrap_waktu {
+    background-color: #e5e5e5;
+    border-radius: 0 0 10px 10px;
+    padding: 15px;
+    width: 250px;
+    margin: -8px auto 0 auto;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
 }
+
 #container_login {
-    width:350px;
+    width: 350px;
     position: absolute;
-    top:40%;
+    top: 40%;
     left: 50%;
     margin-left: -175px;
     margin-top: -100px;
 }
+
 /* -----Style untuk protal membuat pertemuan----- */
 #container_create_pertemuan {
-	width:350px;
-	position: absolute;
-	top:50%;
-	left: 50%;
-	margin-left: -175px;
-	margin-top: -100px;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -175px;
+    margin-top: -100px;
 }
+
 #box_create_pertemuan {
-	background-color:#eaeaea;
-	border:1px solid #d7d7d7;
-	border-radius:10px;
-}
-.wrap_dalam_box_create_pertemuan{
-	margin:35px;
-}
-.btn_create_pertemuan{
-	border-radius: 5px;
-	border:none;
-	background-color: #03A5D9;
-	color:#fff;
-	padding:15px 0;
-	width: 100%;
-	font-weight: bold;
-	cursor:pointer;
-	transition:all .20s ease-in-out;
-}
-.btn_create_pertemuan:hover{
-	background-color: #0290BF;
-}
-.option_kelompok_pertemuan select{
-	background-color: #fff;
-	border: none;
-	width: 100%;
-	padding: 10px;
-	margin-bottom: 5px;
-}
-.option_kelompok_pertemuan select option{
-<<<<<<< HEAD
-	color: #000;
-=======
-
->>>>>>> origin/attic
-}
-.catatan_create_pertemuan{
-	text-align: center;
-	margin-top: 10px;
+    background-color: #eaeaea;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
 }
 
+.wrap_dalam_box_create_pertemuan {
+    margin: 35px;
+}
+
+.btn_create_pertemuan {
+    border-radius: 5px;
+    border: none;
+    background-color: #03A5D9;
+    color: #fff;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .20s ease-in-out;
+}
+
+.btn_create_pertemuan:hover {
+    background-color: #0290BF;
+}
+
+.option_kelompok_pertemuan select {
+    background-color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.option_kelompok_pertemuan select option {
+    < < < < < < < HEAD
+    color: #000;
+= = = = = = = > > > > > > > origin / attic
+}
+
+.catatan_create_pertemuan {
+    text-align: center;
+    margin-top: 10px;
+}
 
 /* -----Style untuk protal absensi----- */
-#container_absen{
-	position: absolute;
-	top: 40%;
-	text-align: center;
-	width: 100%;
+#container_absen {
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    width: 100%;
 }
-#btn_untuk_absen{
-	width: 300px;
-	border-radius: 5px;
-	background-color: #03A5D9;
-	color:#fff;
-	font-weight: bold;
-	padding: 15px 0;
-	text-align: center;
-	font-size: 18px;
-	cursor: pointer;
-	margin:0 auto;
-	transition:all .20s ease-in-out;
+
+#btn_untuk_absen {
+    width: 300px;
+    border-radius: 5px;
+    background-color: #03A5D9;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: all .20s ease-in-out;
 }
-#btn_untuk_absen:hover{
-	background-color: #E74C3B;
+
+#btn_untuk_absen:hover {
+    background-color: #E74C3B;
 }
-.catatan_untuk_absen{
-	text-align: center;
-	margin-top: 5px;
+
+.catatan_untuk_absen {
+    text-align: center;
+    margin-top: 5px;
 }
-.title_portal_absensi{
-<<<<<<< HEAD
-	text-align: center;	
-	margin-top: 5%;
-=======
-	text-align: center;
-	margin-top: 8%;
->>>>>>> origin/attic
+
+.title_portal_absensi {
+    < < < < < < < HEAD
+    text-align: center;
+    margin-top: 5%;
+= = = = = = = text-align: center;
+    margin-top: 8%;
+> > > > > > > origin / attic
 }
-.title_portal_absensi .title1{
-	display: block;
-	font-size: 35px;
-	font-weight: bold;
-}
-.title_portal_absensi .title2{
-	display: block;
-	font-size:15px;
-}
-.title_portal_absensi .title3{
+
+.title_portal_absensi .title1 {
     display: block;
-    font-size:20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.title_portal_absensi .title2 {
+    display: block;
+    font-size: 15px;
+}
+
+.title_portal_absensi .title3 {
+    display: block;
+    font-size: 20px;
     margin-top: -3%;
 }
-#btn_tutup_absen{
-	z-index: 2;
-	position: absolute;
-	bottom: 20px;
-<<<<<<< HEAD
-	right: -69px;
-=======
-	right: -110px;
->>>>>>> origin/attic
-	background-color: #E74C3B;
-	color: #fff;
-	font-weight: bold;
-	padding: 10px 20px 10px 40px;
-	cursor: pointer;
-	transition:all .20s ease-in-out;
-}
-#btn_tutup_absen:hover{
-	padding: 10px 20px;
-	right: 0;
-}
-#content_success_absen{
-	background-color: #dcebf0;
-	padding:30px 0;
-	text-align: center;
-	width: 100%;
-}
-#content_success_absen .title1{
-	font-size: 18px;
-}
-#content_success_absen .title1 #nama_absener{
-	font-weight: bold;
-	color: #03A5D9;
-}
-#content_success_absen .title2{
-	font-size:18px;
-}
-#content_proses_absen{
-	display: none;
-}
-#content_fail_absen{
-	background-color: #F7A8A8;
-	padding:30px 0;
-	text-align: center;
-	width: 100%;
-	font-weight: bold;
-	font-size: 18px;
-	color: #E00000;
+
+#btn_tutup_absen {
+    z-index: 2;
+    position: absolute;
+    bottom: 20px;
+    < < < < < < < HEAD
+    right: -69px;
+= = = = = = = right: - 110 px;
+> > > > > > > origin / attic background-color: #E74C3B;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px 10px 40px;
+    cursor: pointer;
+    transition: all .20s ease-in-out;
 }
 
-#content_sudah_tercatat_absen{
-	background-color: #2FE0AE;
-	padding:30px 0;
-	text-align: center;
-	width: 100%;
-}
-#content_sudah_tercatat_absen .title1{
-	font-size: 18px;
-	color:#00855F;
-}
-#content_sudah_tercatat_absen .title1 #nama_absener{
-	font-weight: bold;
-	color: #00855F;
+#btn_tutup_absen:hover {
+    padding: 10px 20px;
+    right: 0;
 }
 
-#container_hasil_absen{
-	position: absolute;
-	top: 40%;
-	text-align: center;
-	width: 100%;
+#content_success_absen {
+    background-color: #dcebf0;
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+}
+
+#content_success_absen .title1 {
+    font-size: 18px;
+}
+
+#content_success_absen .title1 #nama_absener {
+    font-weight: bold;
+    color: #03A5D9;
+}
+
+#content_success_absen .title2 {
+    font-size: 18px;
+}
+
+#content_proses_absen {
+    display: none;
+}
+
+#content_fail_absen {
+    background-color: #F7A8A8;
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    color: #E00000;
+}
+
+#content_sudah_tercatat_absen {
+    background-color: #2FE0AE;
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+}
+
+#content_sudah_tercatat_absen .title1 {
+    font-size: 18px;
+    color: #00855F;
+}
+
+#content_sudah_tercatat_absen .title1 #nama_absener {
+    font-weight: bold;
+    color: #00855F;
+}
+
+#container_hasil_absen {
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    width: 100%;
 }
 
 /*---------Style untuk qrcode----------*/
-.qrcode_wrap{
-	margin:-40px auto 0 auto;
-	width:320px;
+.qrcode_wrap {
+    margin: -40px auto 0 auto;
+    width: 320px;
 }
-#mainbody{
+
+#mainbody {
     background: white;
-    width:100%;
-  	display:none;
-}
-#v{
-    width:320px;
-    height:240px;
-}
-#qr-canvas{
-    display:none;
-}
-.selector{
-    margin:0;
-    padding:0;
-    cursor:pointer;
-    margin-bottom:-5px;
+    width: 100%;
     display: none;
 }
-#outdiv
-{
-    width:320px;
-    height:240px;
-	border: solid;
-	border-width: 3px 3px 3px 3px;
+
+#v {
+    width: 320px;
+    height: 240px;
 }
+
+#qr-canvas {
+    display: none;
+}
+
+.selector {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    margin-bottom: -5px;
+    display: none;
+}
+
+#outdiv {
+    width: 320px;
+    height: 240px;
+    border: solid;
+    border-width: 3px 3px 3px 3px;
+}
+
 /*#result{
     border: solid;
 	border-width: 1px 1px 1px 1px;
@@ -253,29 +291,33 @@ body{
 }*/
 
 /* -----Style untuk footer----- */
-#footer{
-	background-color: #e5e5e5;
-	position: absolute;
-	bottom:0;
-	padding: 30px 0;
-	width: 100%;
-	text-align: center;
+#footer {
+    background-color: #e5e5e5;
+    position: absolute;
+    bottom: 0;
+    padding: 30px 0;
+    width: 100%;
+    text-align: center;
 }
-.wrap_dalam_footer{
-	width:270px;
-	margin:0 auto;
-	display: block;
+
+.wrap_dalam_footer {
+    width: 270px;
+    margin: 0 auto;
+    display: block;
 }
-.wrap_dalam_footer .logo1{
-	float:left;
+
+.wrap_dalam_footer .logo1 {
+    float: left;
 }
-.wrap_dalam_footer .logo2{
-	float:right;
+
+.wrap_dalam_footer .logo2 {
+    float: right;
 }
-.wrap_dalam_footer .tulisan{
-	margin: auto;
-	align-self: center;
-	vertical-align: middle;
-	font-size: 16pt;
-	font-weight: bold;
-	}
+
+.wrap_dalam_footer .tulisan {
+    margin: auto;
+    align-self: center;
+    vertical-align: middle;
+    font-size: 16pt;
+    font-weight: bold;
+}

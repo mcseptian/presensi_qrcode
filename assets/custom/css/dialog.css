@@ -1,111 +1,133 @@
-#bg_dialog{
-	 background-color: rgba(0,0,0,0.7);
-	 width: 100%;
-	 height: 100%;
-	 position: absolute;
-	 z-index: 5;
-	 display:none;
- }
-#tempat_box_dialog{
-	position: absolute;
-	width: 100%;
-	top: 50%;
-	left: 50%;
-	z-index: 6;
-	display: none;
+#bg_dialog {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+    display: none;
 }
 
-.box_dialog{
-	background-color: #fff;
-	border-radius: 10px;
-	border: 7px solid #9A9A8E;
-	width:500px;
-	margin: 0 auto;
+#tempat_box_dialog {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: 6;
+    display: none;
 }
 
-.wrap_text{
-	padding:40px 30px;
-	font-size: 18px;
-	text-align: center;
+.box_dialog {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 7px solid #9A9A8E;
+    width: 500px;
+    margin: 0 auto;
 }
 
-.btn_tidak_dialog{
-	width: 50%;
-	text-align: center;
-	background-color: #E74C3B;
-	color: #FFF;
-	font-weight: bold;
-	font-size: 16px;
-	padding: 20px 0;
-	float: left;
-	cursor: pointer;
-	transition:all .20s ease-in-out;
-}
-.btn_tidak_dialog:hover{
-	background-color: #D43624;
-}
-.btn_ya_dialog{
-	width: 50%;
-	text-align: center;
-	background-color: #03A5D9;
-	color: #FFF;
-	font-weight: bold;
-	font-size: 16px;
-	padding: 20px 0;
-	float: left;
-	cursor: pointer;
-	transition:all .20s ease-in-out;
-}
-.btn_ya_dialog:hover{
-	background-color: #0086D9;
+.wrap_text {
+    padding: 40px 30px;
+    font-size: 18px;
+    text-align: center;
 }
 
-.input_pass_dialog{
-	padding: 15px;
-	font-size: 20px;
-	color: #999;
-<<<<<<< HEAD
-	border-radius: 5px;
-=======
->>>>>>> origin/attic
-	border: solid 2px #ddd;
-	background-color: #eee;
-	width: 70%;
-	margin:0;
-<<<<<<< HEAD
-	height: 50%;
+.btn_tidak_dialog {
+    width: 50%;
+    text-align: center;
+    background-color: #E74C3B;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 20px 0;
+    float: left;
+    cursor: pointer;
+    transition: all .20s ease-in-out;
 }
-.btn_submit_dialog{
-	border-radius:5px;
-	background-color: #03A5D9;
-	color: #fff;
-	font-size: 20px;
-	padding: 11px;
-	width: 15%;
-=======
-	border-radius: 5px;
+
+.btn_tidak_dialog:hover {
+    background-color: #D43624;
 }
-.btn_submit_dialog{
-	background-color: #03A5D9;
-	color: #fff;
-	font-size: 20px;
-	padding: 15px 15px 15px;
-	text-align: center;
-	width: 21%;
->>>>>>> origin/attic
-	border: solid 2px #028AB8;
-	font-weight: bold;
-	margin:0;
-	cursor: pointer;
-	transition:all .20s ease-in-out;
-	border-radius: 5px;
+
+.btn_ya_dialog {
+    width: 50%;
+    text-align: center;
+    background-color: #03A5D9;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 20px 0;
+    float: left;
+    cursor: pointer;
+    transition: all .20s ease-in-out;
 }
-.btn_submit_dialog:hover{
-<<<<<<< HEAD
-	background-color: #E74C3B;
-	border: solid 2px #D43624;
+
+.btn_ya_dialog:hover {
+    background-color: #0086D9;
 }
-=======
-	background-color: #0086D9;
+
+.input_pass_dialog {
+    padding: 15px;
+    font-size: 20px;
+    color: #999;
+    < < < < < < < HEAD
+    border-radius: 5px;
+= = = = = = = > > > > > > > origin / attic border: solid 2 px #ddd;
+    background-color: #eee;
+    width: 70%;
+    margin: 0;
+    < < < < < < < HEAD
+    height: 50%;
 }
->>>>>>> origin/attic
+
+.btn_submit_dialog {
+    border-radius: 5px;
+    background-color: #03A5D9;
+    color: #fff;
+    font-size: 20px;
+    padding: 11px;
+    width: 15%;
+= = = = = = = border-radius: 5 px;
+}
+
+.btn_submit_dialog {
+    background-color: #03A5D9;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 15px 15px;
+    text-align: center;
+    width: 21%;
+> > > > > > > origin / attic border: solid 2 px #028AB8;
+    font-weight: bold;
+    margin: 0;
+    cursor: pointer;
+    transition: all .20s ease-in-out;
+    border-radius: 5px;
+}
+
+.btn_submit_dialog:hover {
+    < < < < < < < HEAD
+    background-color: #E74C3B;
+    border: solid 2px #D43624;
+}
+
+=
+=
+=
+=
+=
+=
+=
+background-color: #0086D9
+
+;
+}
+>
+>
+>
+>
+>
+>
+>
+origin
+
+/
+attic
